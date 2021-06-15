@@ -9,6 +9,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -376,33 +377,6 @@ template {
 /* Base */
 /* Layout */
 /* Page */
-.frame {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background: #d74b4b;
-  color: #333;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .card,
 .wrap {
   position: relative;
@@ -512,108 +486,64 @@ template {
 }
 
 .road_1 {
-  top: 15px;
+  top: 30px;
   right: 0;
-  width: 1px;
+  width: 12px;
   border-bottom: 2px solid #dbdbdb;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 2.5s linear infinite;
-          animation: bottom 2.5s linear infinite;
+  -webkit-animation: bottom 0.7s linear infinite;
+          animation: bottom 0.7s linear infinite;
 }
 
 .cloud_1 {
-  top: 104px;
+  top: 53px;
   right: 0;
-  width: 33px;
+  width: 19px;
   border-bottom: 1px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 3.7s linear infinite;
-          animation: bottom 3.7s linear infinite;
+  -webkit-animation: bottom 4.3s linear infinite;
+          animation: bottom 4.3s linear infinite;
 }
 
 .road_2 {
-  top: 3px;
+  top: 12px;
   right: 0;
-  width: 9px;
-  border-bottom: 2px solid #dbdbdb;
+  width: 22px;
+  border-bottom: 1px solid #dbdbdb;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 0.9s linear infinite;
-          animation: bottom 0.9s linear infinite;
+  -webkit-animation: bottom 4s linear infinite;
+          animation: bottom 4s linear infinite;
 }
 
 .cloud_2 {
-  top: 1px;
+  top: 143px;
   right: 0;
-  width: 2px;
+  width: 16px;
   border-bottom: 2px solid #cfcfcf;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 3.9s linear infinite;
+          animation: bottom 3.9s linear infinite;
+}
+
+.road_3 {
+  top: 19px;
+  right: 0;
+  width: 45px;
+  border-bottom: 2px solid #dbdbdb;
   -webkit-transition: 3s;
   transition: 3s;
   -webkit-animation: bottom 3.6s linear infinite;
           animation: bottom 3.6s linear infinite;
 }
 
-.road_3 {
-  top: 10px;
-  right: 0;
-  width: 27px;
-  border-bottom: 1px solid #dbdbdb;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 3.4s linear infinite;
-          animation: bottom 3.4s linear infinite;
-}
-
 .cloud_3 {
-  top: 46px;
+  top: 130px;
   right: 0;
-  width: 24px;
-  border-bottom: 1px solid #cfcfcf;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 0.6s linear infinite;
-          animation: bottom 0.6s linear infinite;
-}
-
-.road_4 {
-  top: 7px;
-  right: 0;
-  width: 13px;
-  border-bottom: 1px solid #dbdbdb;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 4.2s linear infinite;
-          animation: bottom 4.2s linear infinite;
-}
-
-.cloud_4 {
-  top: 64px;
-  right: 0;
-  width: 4px;
-  border-bottom: 1px solid #cfcfcf;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 0.6s linear infinite;
-          animation: bottom 0.6s linear infinite;
-}
-
-.road_5 {
-  top: 7px;
-  right: 0;
-  width: 19px;
-  border-bottom: 2px solid #dbdbdb;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 2.5s linear infinite;
-          animation: bottom 2.5s linear infinite;
-}
-
-.cloud_5 {
-  top: 125px;
-  right: 0;
-  width: 18px;
+  width: 42px;
   border-bottom: 2px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
@@ -621,52 +551,8 @@ template {
           animation: bottom 3.1s linear infinite;
 }
 
-.road_6 {
-  top: 1px;
-  right: 0;
-  width: 20px;
-  border-bottom: 1px solid #dbdbdb;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 1.8s linear infinite;
-          animation: bottom 1.8s linear infinite;
-}
-
-.cloud_6 {
-  top: 150px;
-  right: 0;
-  width: 46px;
-  border-bottom: 2px solid #cfcfcf;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 2.8s linear infinite;
-          animation: bottom 2.8s linear infinite;
-}
-
-.road_7 {
-  top: 20px;
-  right: 0;
-  width: 20px;
-  border-bottom: 1px solid #dbdbdb;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 0.4s linear infinite;
-          animation: bottom 0.4s linear infinite;
-}
-
-.cloud_7 {
-  top: 107px;
-  right: 0;
-  width: 18px;
-  border-bottom: 2px solid #cfcfcf;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 1.7s linear infinite;
-          animation: bottom 1.7s linear infinite;
-}
-
-.road_8 {
-  top: 24px;
+.road_4 {
+  top: 31px;
   right: 0;
   width: 43px;
   border-bottom: 2px solid #dbdbdb;
@@ -676,21 +562,65 @@ template {
           animation: bottom 3.2s linear infinite;
 }
 
-.cloud_8 {
-  top: 118px;
+.cloud_4 {
+  top: 148px;
   right: 0;
-  width: 47px;
+  width: 48px;
   border-bottom: 2px solid #cfcfcf;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 1.9s linear infinite;
+          animation: bottom 1.9s linear infinite;
+}
+
+.road_5 {
+  top: 14px;
+  right: 0;
+  width: 21px;
+  border-bottom: 2px solid #dbdbdb;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 1.5s linear infinite;
+          animation: bottom 1.5s linear infinite;
+}
+
+.cloud_5 {
+  top: 79px;
+  right: 0;
+  width: 31px;
+  border-bottom: 1px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
   -webkit-animation: bottom 2.3s linear infinite;
           animation: bottom 2.3s linear infinite;
 }
 
-.road_9 {
-  top: 21px;
+.road_6 {
+  top: 2px;
   right: 0;
   width: 9px;
+  border-bottom: 2px solid #dbdbdb;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 3.2s linear infinite;
+          animation: bottom 3.2s linear infinite;
+}
+
+.cloud_6 {
+  top: 26px;
+  right: 0;
+  width: 6px;
+  border-bottom: 2px solid #cfcfcf;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 1.2s linear infinite;
+          animation: bottom 1.2s linear infinite;
+}
+
+.road_7 {
+  top: 32px;
+  right: 0;
+  width: 2px;
   border-bottom: 2px solid #dbdbdb;
   -webkit-transition: 3s;
   transition: 3s;
@@ -698,109 +628,131 @@ template {
           animation: bottom 2.5s linear infinite;
 }
 
-.cloud_9 {
-  top: 26px;
+.cloud_7 {
+  top: 109px;
   right: 0;
-  width: 21px;
-  border-bottom: 1px solid #cfcfcf;
+  width: 49px;
+  border-bottom: 2px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
   -webkit-animation: bottom 3.9s linear infinite;
           animation: bottom 3.9s linear infinite;
 }
 
-.road_10 {
-  top: 21px;
+.road_8 {
+  top: 12px;
   right: 0;
-  width: 36px;
+  width: 26px;
   border-bottom: 1px solid #dbdbdb;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 2.2s linear infinite;
-          animation: bottom 2.2s linear infinite;
+  -webkit-animation: bottom 3.2s linear infinite;
+          animation: bottom 3.2s linear infinite;
 }
 
-.cloud_10 {
-  top: 143px;
+.cloud_8 {
+  top: 115px;
   right: 0;
-  width: 30px;
-  border-bottom: 2px solid #cfcfcf;
+  width: 20px;
+  border-bottom: 1px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 0.8s linear infinite;
-          animation: bottom 0.8s linear infinite;
+  -webkit-animation: bottom 2.7s linear infinite;
+          animation: bottom 2.7s linear infinite;
 }
 
-.road_11 {
-  top: 18px;
+.road_9 {
+  top: 11px;
   right: 0;
-  width: 3px;
+  width: 13px;
   border-bottom: 1px solid #dbdbdb;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 4.2s linear infinite;
-          animation: bottom 4.2s linear infinite;
-}
-
-.cloud_11 {
-  top: 86px;
-  right: 0;
-  width: 44px;
-  border-bottom: 2px solid #cfcfcf;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 0.4s linear infinite;
-          animation: bottom 0.4s linear infinite;
-}
-
-.road_12 {
-  top: 30px;
-  right: 0;
-  width: 48px;
-  border-bottom: 1px solid #dbdbdb;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-animation: bottom 3s linear infinite;
-          animation: bottom 3s linear infinite;
-}
-
-.cloud_12 {
-  top: 149px;
-  right: 0;
-  width: 22px;
-  border-bottom: 2px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
   -webkit-animation: bottom 2.6s linear infinite;
           animation: bottom 2.6s linear infinite;
 }
 
-.road_13 {
-  top: 20px;
+.cloud_9 {
+  top: 8px;
   right: 0;
-  width: 48px;
+  width: 37px;
+  border-bottom: 2px solid #cfcfcf;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 1.2s linear infinite;
+          animation: bottom 1.2s linear infinite;
+}
+
+.road_10 {
+  top: 12px;
+  right: 0;
+  width: 25px;
   border-bottom: 1px solid #dbdbdb;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 4.3s linear infinite;
-          animation: bottom 4.3s linear infinite;
+  -webkit-animation: bottom 1.2s linear infinite;
+          animation: bottom 1.2s linear infinite;
 }
 
-.cloud_13 {
-  top: 21px;
+.cloud_10 {
+  top: 131px;
   right: 0;
-  width: 44px;
+  width: 33px;
+  border-bottom: 2px solid #cfcfcf;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 1.8s linear infinite;
+          animation: bottom 1.8s linear infinite;
+}
+
+.road_11 {
+  top: 35px;
+  right: 0;
+  width: 34px;
+  border-bottom: 2px solid #dbdbdb;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 1.6s linear infinite;
+          animation: bottom 1.6s linear infinite;
+}
+
+.cloud_11 {
+  top: 104px;
+  right: 0;
+  width: 24px;
   border-bottom: 1px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 3.5s linear infinite;
-          animation: bottom 3.5s linear infinite;
+  -webkit-animation: bottom 1.7s linear infinite;
+          animation: bottom 1.7s linear infinite;
 }
 
-.road_14 {
-  top: 24px;
+.road_12 {
+  top: 30px;
   right: 0;
-  width: 39px;
+  width: 36px;
+  border-bottom: 2px solid #dbdbdb;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 3.1s linear infinite;
+          animation: bottom 3.1s linear infinite;
+}
+
+.cloud_12 {
+  top: 26px;
+  right: 0;
+  width: 43px;
+  border-bottom: 1px solid #cfcfcf;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 1.8s linear infinite;
+          animation: bottom 1.8s linear infinite;
+}
+
+.road_13 {
+  top: 33px;
+  right: 0;
+  width: 30px;
   border-bottom: 1px solid #dbdbdb;
   -webkit-transition: 3s;
   transition: 3s;
@@ -808,15 +760,37 @@ template {
           animation: bottom 1.8s linear infinite;
 }
 
-.cloud_14 {
-  top: 24px;
+.cloud_13 {
+  top: 4px;
   right: 0;
-  width: 40px;
-  border-bottom: 1px solid #cfcfcf;
+  width: 47px;
+  border-bottom: 2px solid #cfcfcf;
   -webkit-transition: 3s;
   transition: 3s;
-  -webkit-animation: bottom 0.9s linear infinite;
-          animation: bottom 0.9s linear infinite;
+  -webkit-animation: bottom 2.7s linear infinite;
+          animation: bottom 2.7s linear infinite;
+}
+
+.road_14 {
+  top: 26px;
+  right: 0;
+  width: 40px;
+  border-bottom: 2px solid #dbdbdb;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 0.6s linear infinite;
+          animation: bottom 0.6s linear infinite;
+}
+
+.cloud_14 {
+  top: 79px;
+  right: 0;
+  width: 14px;
+  border-bottom: 2px solid #cfcfcf;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: bottom 3.8s linear infinite;
+          animation: bottom 3.8s linear infinite;
 }
 
 @-webkit-keyframes bottom {
@@ -828,6 +802,99 @@ template {
 @keyframes bottom {
   100% {
     right: 300px;
+  }
+}
+
+.svg-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background: #FEAC5E;
+  background: -webkit-gradient(linear, left top, right top, from(#4BC0C8), color-stop(#C779D0), to(#FEAC5E));
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+}
+
+.svg-text svg text {
+  font-family: 'Anton', sans-serif;
+  font-size: 6rem;
+  stroke-width: 3px;
+  stroke: #fff;
+  fill: transparent;
+  stroke-dashoffset: 750;
+  stroke-dasharray: 750;
+  -webkit-animation: stroke 1.5s linear;
+          animation: stroke 1.5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+text:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+text:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+text:nth-child(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+text:nth-child(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+text:nth-child(5) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+text:nth-child(6) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+text:nth-child(7) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+@-webkit-keyframes stroke {
+  0% {
+    stroke-dashoffset: 750;
+  }
+  70% {
+    fill: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+}
+
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: 750;
+  }
+  70% {
+    fill: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fff;
   }
 }
 /*# sourceMappingURL=import.css.map */
